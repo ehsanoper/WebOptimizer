@@ -41,7 +41,7 @@ namespace WebOptimizer
 
             // Ignore references with protocols
             if(match.Value.Contains("://") || match.Value.StartsWith("//") || match.Value.StartsWith("data:"))
-                content.AsByteArray();
+                return content.AsByteArray();
 
             while (match.Success)
             {
